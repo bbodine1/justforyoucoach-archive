@@ -3,4 +3,5 @@ dist
 .sass-cache
 .jekyll-metadata
 .sass-cache
+node_modules
 
