@@ -1,19 +1,8 @@
 
-{%- assign default_paths = site.pages | map: "path" -%}
-{%- assign page_paths = site.header_pages | default: default_paths -%}
+{% assign menu = site.data.nav-main.menu %}
 
-
-
-{%- if page_paths -%}
-  <a href="{{ "/" | relative_url }}">Home</a>
-
-  {%- for path in page_paths -%}
-    {%- assign my_page = site.pages | where: "path", path | first -%}
-
-    <a  href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-
-  {%- endfor -%}
-
-{%- endif -%}
+{% for item in menu %}
+  <a class="{% if item.url == page.url %}active{% endif%}" href="{{ item.url }}">{{ item.title }}</a>
+{% endfor %}
 
 <p>This is content from header.html</p>
