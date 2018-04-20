@@ -1,14 +1,15 @@
 # Site settings
-title: Your awesome title
-email: your-email@example.com
+title: Just For You Coach
+email: justforyoucoach@bellsouth.net
+phone: 256-837-2287
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Local, family-owned business out of Hartselle, Alabama for over
+  12 years. Let us take you where you need to go!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter: https://twitter.com/JustForYouCoach
+instagram:  https://www.instagram.com/explore/locations/1028052589/
+facebook: https://www.facebook.com/Just-For-You-Coach-Casino-Trips-404242349765350/
 
 # Build settings
 source: src

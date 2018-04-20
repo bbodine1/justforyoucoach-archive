@@ -1,8 +1,13 @@
 
+<h1>{{ site.title }}</h1>
+
+<p>
+  <a href="/plan-your-trip-with-us">Customize Your Trip!</a>
+</p>
+
 {% assign menu = site.data.nav-main.menu %}
 
 {% for item in menu %}
   <a class="{% if item.url == page.url %}active{% endif%}" href="{{ item.url }}">{{ item.title }}</a>
 {% endfor %}
 
-<p>This is content from header.html</p>

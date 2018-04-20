@@ -3,7 +3,13 @@ menu:
     url: /
 
   - title: About
-    url: /about
+    url: /about-us
 
-  - title: Contact
-    url: /contact
+  - title: Testimonials
+    url: /testimonials
+
+  - title: Plan Your Trip
+    url: /plan-your-trip-with-us
+
+  - title: Questions
+    url: /questions
