@@ -1,3 +1,20 @@
 // typography.scss                         _sass/partials
 /////////////////////////////////////////////////////////////////////////
 
+
+body {
+  font-family: $base-body-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $base-heading-font-family;
+}
+
+a {
+  color: $link-color;
+  transition: $link-transition;
+  &:hover {
+    color: darken($link-color, 20%);
+    text-decoration: none;
+  }
+}

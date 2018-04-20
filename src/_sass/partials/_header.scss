@@ -1,0 +1,77 @@
+// header.scss                         _sass/partials
+/////////////////////////////////////////////////////////////////////////
+
+header {
+  @media #{$medium-up} {
+    min-height: rem-calc(221);
+    padding-bottom: rem-calc(32);
+  }
+}
+
+header .main-wrapper {
+  position: relative;
+  min-height: rem-calc(226) ;
+}
+
+header .customize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem-calc(50);
+  width: rem-calc(291);
+  background-color: $link-color;
+  font-size: rem-calc(19);
+  font-family: $base-heading-font-family;
+  color: $white;
+  border-radius: rem-calc(0 0 4 4);
+  box-shadow: rem-calc(0 1 4) rgba($black, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  &:hover {
+    background-color: lighten($accent, 30%);
+    color: $black;
+  }
+}
+
+header h1 {
+  position: absolute;
+  bottom: rem-calc(-14);
+  left: 0;
+  width: rem-calc(500);
+  margin-left: rem-calc(12);
+  font-size: rem-calc(67);
+  line-height: 1;
+  color: $white;
+  text-shadow: rem-calc(0 4 5) rgba($black, 0.4);
+  text-transform: uppercase;
+}
+
+header nav {
+  display: none;
+  background-color: $white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @media #{$medium-up} {
+    display: flex;
+  }
+}
+
+header nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem-calc(32);
+  padding: rem-calc(0 32);
+  color: $black;
+  font-size: rem-calc(17);
+  font-family: $base-heading-font-family;
+  &:hover {
+    background-color: $accent;
+    color: $white;
+  }
+  &.active {
+    background-color: $primary;
+  }
+}

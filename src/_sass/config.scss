@@ -29,10 +29,11 @@ $xxlarge-range: (120.063em); // 1921px
 // Base settings
 $base-font-size: 16px;
 $base-font-color: $mine;
-$base-body-font-family: 'Open Sans', sans-serif;
-$base-heading-font-family: 'Rokkitt', serif;
+$base-body-font-family: 'Basic', sans-serif;;
+$base-heading-font-family: 'Play', sans-serif;;
 $html-background-color: $bleu;
+$page-width: rem-calc(980);
 
 // Global link styles
 $link-transition: all 150ms ease-in-out;
-$link-color: $bleu;
+$link-color: $primary;

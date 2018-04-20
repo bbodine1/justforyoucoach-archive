@@ -1,13 +1,16 @@
 
-<h1>{{ site.title }}</h1>
+<header>
+  <div class="main-wrapper">
+    <h1>{{ site.title }}</h1>
 
-<p>
-  <a href="/plan-your-trip-with-us">Customize Your Trip!</a>
-</p>
+    <a class="customize" href="/plan-your-trip-with-us">Customize Your Trip!</a>
 
-{% assign menu = site.data.nav-main.menu %}
+    <nav>
+    {% assign menu = site.data.nav-main.menu %}
 
-{% for item in menu %}
-  <a class="{% if item.url == page.url %}active{% endif%}" href="{{ item.url }}">{{ item.title }}</a>
-{% endfor %}
-
+    {% for item in menu %}
+      <a class="{% if item.url == page.url %}active{% endif%}" href="{{ item.url }}">{{ item.title }}</a>
+    {% endfor %}
+    </nav>
+  </div>
+</header>

@@ -1,4 +1,27 @@
 // global.scss                         _sass/partials
 /////////////////////////////////////////////////////////////////////////
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+  overflow: auto;
+  height: 100%;
+}
 
+html {
+  background-image: url("https://static.wixstatic.com/media/b9ab47_ef60a715d8bd4d7d9f78cc806831a5b4~mv2_d_2048_1798_s_2.jpg/v1/fill/w_1920,h_1686,al_c,q_85,usm_0.66_1.00_0.01/b9ab47_ef60a715d8bd4d7d9f78cc806831a5b4~mv2_d_2048_1798_s_2.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  background-color:  rgba(209, 194, 194, .9);
+}
+
+.main-wrapper {
+  width: 100%;
+  max-width: $page-width;
+  margin: 0 auto;
+}
